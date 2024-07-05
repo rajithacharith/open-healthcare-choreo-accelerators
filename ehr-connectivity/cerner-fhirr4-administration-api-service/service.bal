@@ -89,7 +89,7 @@ service / on new fhirr4:Listener(9090, patientApiConfig) {
     }
 }
 
-service / on new fhirr4:Listener(9091, organizationApiConfig) {
+service / on new fhirr4:Listener(9097, organizationApiConfig) {
 
     // Read the current state of the resource.
     isolated resource function get fhir/r4/Organization/[string id](r4:FHIRContext fhirContext) returns @http:Payload {mediaType: ["application/fhir+json"]} Organization|r4:FHIRError {

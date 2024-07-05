@@ -9,8 +9,8 @@ endpoints:
   networkVisibility: Public
   context: /
   schemaFilePath: oas/PatientAPI.yaml
-- name: Cerner FHIR Practitioner API
-  port: 9092
+- name: Cerner FHIR TestPractitioner API
+  port: 9097
   type: REST
   networkVisibility: Public
   context: /
@@ -33,7 +33,7 @@ endpoints:
   networkVisibility: Public
   context: /
   schemaFilePath: oas/OrganizationAPI.yaml
-- name: Cerner FHIR RolePractitioner API
+- name: Cerner FHIR PractitionerRole API
   port: 9093
   type: REST
   networkVisibility: Public
